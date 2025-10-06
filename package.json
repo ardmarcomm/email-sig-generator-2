@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ardmarcomm.github.com/email-sig-generator-2",
+  "homepage": "https://ardmarcomm.github.io/email-sig-generator-2",
   "name": "email-sig-generator-2",
   "version": "0.1.0",
   "private": true,
@@ -47,6 +47,7 @@
     "gh-pages": "^6.3.0"
   }
 }
+
 
 
 
