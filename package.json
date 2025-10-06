@@ -1,6 +1,6 @@
 {
-  "homepage": "https://andrewuebe.github.io/email-sig-generator",
-  "name": "email-sig-generator",
+  "homepage": "https://github.com/ardmarcomm/email-sig-generator-2",
+  "name": "email-sig-generator-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
