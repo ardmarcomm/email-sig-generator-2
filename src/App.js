@@ -236,7 +236,7 @@ class App extends React.Component {
           <h2>ARD Email Signature Generator</h2>
           <p>
             Complete the form below to receive a custom, Northwestern-branded
-            signature for your ARD staff email. Simply click “Generate
+            signature for your ARD staff email. Simply select “Generate
             Signature” when you’ve provided the requested information.
           </p>
           <p>
