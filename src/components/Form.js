@@ -170,7 +170,7 @@ export default class Form extends Component {
         <h3>Job</h3>
         <DoubleInputStep
           fieldName={["title", "department"]}
-          fieldLabel={["Job Title", "Department"]}
+          fieldLabel={["Job Title", "ARD Department"]}
           handleFieldChange={this.props.handleFieldChange}
           fieldDefaultVals={[
             this.props.globalState.title,

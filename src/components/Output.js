@@ -264,7 +264,6 @@ export default class Output extends Component {
                   </strong>
                 </td>
               </tr>
-              {this.props.globalState.hearMyNameLink.length > 0 && (<tr><td><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear My Name</a></td></tr>)}
               <tr>
                 <td
                   style={{
@@ -275,8 +274,9 @@ export default class Output extends Component {
                     lineHeight: "1.37",
                     width: "max-content",
                   }}
-                >
+                  >
                   {this.props.globalState.pronouns.length > 0 && Pronouns}
+                  {this.props.globalState.hearMyNameLink.length > 0 && (<tr><td><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td></tr>)}
                   {this.props.globalState.title.length > 0 && Job}
                   <div>
                     <span className="org">{this.props.globalState.org}</span>
