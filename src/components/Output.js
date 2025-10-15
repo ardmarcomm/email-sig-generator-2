@@ -321,6 +321,7 @@ export default class Output extends Component {
             </tbody>
           </table>
         </div>
+        <div>
         <table
           cellPadding="0"
           cellSpacing="0"
@@ -420,6 +421,7 @@ export default class Output extends Component {
             </tr>
           </tbody>
         </table>
+        </div>
         {this.props.globalState.isAcknowledgement && landAcknowledgement}
       </section>
     );
