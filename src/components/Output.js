@@ -224,7 +224,7 @@ export default class Output extends Component {
             cellSpacing="0"
             style={{
               borderTop: "1px solid #4e2a84",
-              borderBottom: "1px solid #4e2a84",
+              // borderBottom: "1px solid #4e2a84",
               fontFamily: '"Arial"',
               fontSize: "14px",
               color: "#716C6B",
@@ -307,6 +307,7 @@ export default class Output extends Component {
                   style={{
                     fontFamily: '"Arial"',
                     fontSize: "14px",
+                    borderBottom: "1px solid #4e2a84",
                     color: "#716C6B",
                     paddingTop: "10px",
                     paddingBottom: "30px",
