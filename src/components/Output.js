@@ -310,7 +310,7 @@ export default class Output extends Component {
                     borderBottom: "1px solid #4e2a84",
                     color: "#716C6B",
                     paddingTop: "10px",
-                    paddingBottom: "30px",
+                    paddingBottom: "20px",
                     lineHeight: "1.37",
                   }}
                 >
