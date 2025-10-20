@@ -176,7 +176,7 @@ export default class Output extends Component {
       var parentDesignation = `${
         undergradDesignation.length > 0 || gradDesignation.length > 0
           ? ""
-          : " "
+          : ""
       }`;
       for (var i = 0; i < this.props.globalState.parentInfo.length; i++) {
         if (i < this.props.globalState.parentInfo.length - 1) {
@@ -259,7 +259,7 @@ export default class Output extends Component {
                       ? gradDesignation
                       : ""}
                     {this.props.globalState.isParentAlum &&
-                      parentDesignation.length > 5 &&
+                      parentDesignation.length > 4 &&
                       " (" + parentDesignation + ")"}
                   </strong>
                 </td>
