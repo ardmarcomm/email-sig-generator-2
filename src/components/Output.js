@@ -145,7 +145,7 @@ export default class Output extends Component {
                 this.props.globalState.gradInfo[i].year.toString().slice(-2) +
                 " " +
                 this.props.globalState.gradInfo[i].degree +
-                ", ";
+                "";
             }
           } else {
             if (this.props.globalState.gradInfo[i].degree.length > 0) {
@@ -155,7 +155,7 @@ export default class Output extends Component {
                 this.props.globalState.gradInfo[i].year.toString().slice(-2) +
                 " " +
                 this.props.globalState.gradInfo[i].degree +
-                ", ";
+                "";
             }
           }
         } else {
@@ -175,7 +175,7 @@ export default class Output extends Component {
     if (this.props.globalState.isParentAlum) {
       var parentDesignation = `${
         undergradDesignation.length > 0 || gradDesignation.length > 0
-          ? ", "
+          ? ""
           : " "
       }`;
       for (var i = 0; i < this.props.globalState.parentInfo.length; i++) {
@@ -260,7 +260,7 @@ export default class Output extends Component {
                       : ""}
                     {this.props.globalState.isParentAlum &&
                       parentDesignation.length > 5 &&
-                      parentDesignation}
+                      " (" + parentDesignation + ")"}
                   </strong>
                 </td>
               </tr>
