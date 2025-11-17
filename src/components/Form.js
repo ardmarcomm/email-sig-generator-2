@@ -128,14 +128,11 @@ export default class Form extends Component {
         />
         <h3>Hear My Name</h3>
         <p>
-          Optional: Be able to record your name so that people can be able to
-          know how to say your name. <a href="https://www.name-coach.com/events/name-profile/registrations/new" target="_blank">Use this link</a> to create a recording of your
-          name, after creation, copy link at the. bottom and paste in the field
-          below.
-        </p>
+          Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new">this link</a>.
+        Once complete, copy the link to the recording and paste it in the field below.</p>
         <InputStep
           fieldName={"hearMyNameLink"}
-          fieldLabel={"Paste Hear My Name link"}
+          fieldLabel={"Paste \"Hear My Name\" link"}
           // fieldDefaultVals={this.props.globalState.hearMyNameLink}
           handleFieldChange={this.props.handleFieldChange}
           isRequired={false}
@@ -144,7 +141,7 @@ export default class Form extends Component {
         <div className="checkboxes">
           <div className="form-step">
             <CheckboxStep
-              fieldName="Are You a Northwestern Undergraduate Alum?"
+              fieldName="Are you a Northwestern undergraduate alum?"
               handleAlumToggle={this.props.handleUndergradAlumToggle}
               isChecked={this.props.globalState.isUndergradAlum}
             />
@@ -152,7 +149,7 @@ export default class Form extends Component {
           </div>
           <div className="form-step">
             <CheckboxStep
-              fieldName="Are You a Northwestern Graduate Degree, Professional Degree, or Certificate Holder?"
+              fieldName="Are you a Northwestern graduate degree, professional degree, or certificate holder?"
               handleAlumToggle={this.props.handleGradAlumToggle}
               isChecked={this.props.globalState.isGradAlum}
             />
@@ -160,7 +157,7 @@ export default class Form extends Component {
           </div>
           <div className="form-step">
             <CheckboxStep
-              fieldName="Are You the Parent/Grandparent of a Northwestern Student or Graduate?"
+              fieldName="Are you the parent/grandparent of a Northwestern student or graduate?"
               handleAlumToggle={this.props.handleParentAlumToggle}
               isChecked={this.props.globalState.isParentAlum}
             />
@@ -181,7 +178,7 @@ export default class Form extends Component {
         />
         <h3>Pronouns</h3>
         <div className="sub-head-helper">
-          Optional (e.g., she/her/hers, he/him/his, and they/their/theirs, etc.)
+          Optional (e.g., she/her/hers, he/him/his, they/their/theirs, etc.)
         </div>
         <InputStep
           fieldName={"pronouns"}
@@ -198,7 +195,7 @@ export default class Form extends Component {
           isRequired={true}
         />
         <h3>Contact Information</h3>
-        <div className="sub-head-helper">Cell phone number is optional</div>
+        <div className="sub-head-helper">Cell phone number is optional.</div>
         <DoubleInputStep
           fieldName={["officePhoneNum", "cellPhoneNum"]}
           fieldLabel={["Office Phone Number", "Cell Phone Number"]}
@@ -220,11 +217,11 @@ export default class Form extends Component {
         /> */}
         <h3>Land Acknowledgment</h3>
         <div className="sub-head-helper">
-          Optional Land Acknowledgment Message
+          Optional
         </div>
         <div className="form-step">
           <CheckboxStep
-            fieldName="Check if you would like to include Northwestern’s land acknowledgment in your email signature (optional)"
+            fieldName="Check this box if you would like to include Northwestern’s land acknowledgment in your email signature."
             handleAlumToggle={this.props.handleAcknowledgementToggle}
             isChecked={this.props.isAcknowledgement}
           />

@@ -237,12 +237,9 @@ class App extends React.Component {
           <p>
             Complete the form below to receive a custom, Northwestern-branded
             signature for your ARD staff email. Simply select “Generate
-            Signature” when you’ve provided the requested information.
-          </p>
-          <p>
-            You may copy and paste your new signature into your email template.
-            For further instructions on how to set a signature on Outlook,
-            follow&nbsp;
+            Signature” after you’ve provided the requested information. Next, copy and paste your new signature into your email template.
+            For further instructions on how to set up a signature on Outlook,
+            please refer to&nbsp;
             <a
               target="_blank"
               rel="noopener noreferrer"
