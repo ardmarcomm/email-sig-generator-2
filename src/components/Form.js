@@ -128,7 +128,7 @@ export default class Form extends Component {
         />
         <h3>Hear My Name</h3>
         <p>
-          Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new">this link</a>.
+          Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new" target="_blank">this link</a>.
         Once complete, copy the link to the recording and paste it in the field below.</p>
         <InputStep
           fieldName={"hearMyNameLink"}
@@ -235,7 +235,7 @@ export default class Form extends Component {
             been living and working on the land from time immemorial. ARD staff
             may choose to include Northwestern’s land acknowledgment in their
             email signatures. Learn more about the land acknowledgment{" "}
-            <a href="http://northwestern.edu/native-american-and-indigenous-peoples/about/Land%20Acknowledgement.html">
+            <a href="http://northwestern.edu/native-american-and-indigenous-peoples/about/Land%20Acknowledgement.html" target="_blank">
               here
             </a>
             .
