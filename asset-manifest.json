@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/email-sig-generator-2/static/css/main.8464261a.css",
-    "main.js": "/email-sig-generator-2/static/js/main.dde3533a.js",
+    "main.js": "/email-sig-generator-2/static/js/main.693b4c05.js",
     "index.html": "/email-sig-generator-2/index.html",
     "main.8464261a.css.map": "/email-sig-generator-2/static/css/main.8464261a.css.map",
-    "main.dde3533a.js.map": "/email-sig-generator-2/static/js/main.dde3533a.js.map"
+    "main.693b4c05.js.map": "/email-sig-generator-2/static/js/main.693b4c05.js.map"
   },
   "entrypoints": [
     "static/css/main.8464261a.css",
-    "static/js/main.dde3533a.js"
+    "static/js/main.693b4c05.js"
   ]
 }
