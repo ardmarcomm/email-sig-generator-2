@@ -127,9 +127,9 @@ export default class Form extends Component {
           halfWidth={true}
         />
         <h3>Hear My Name</h3>
-        <p>
+        <div className="sub-head-helper">
           Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new" target="_blank">this link</a>.
-        Once complete, copy the link to the recording and paste it in the field below.</p>
+        Once complete, copy the link to the recording and paste it in the field below.</div>
         <InputStep
           fieldName={"hearMyNameLink"}
           fieldLabel={"Paste \"Hear My Name\" link"}
@@ -137,7 +137,7 @@ export default class Form extends Component {
           handleFieldChange={this.props.handleFieldChange}
           isRequired={false}
         />
-        <h3>Alumni Designation</h3>
+        <h3>Alumni, Parent, and Grandparent Designations</h3>
         <div className="checkboxes">
           <div className="form-step">
             <CheckboxStep
