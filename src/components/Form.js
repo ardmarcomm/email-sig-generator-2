@@ -126,17 +126,6 @@ export default class Form extends Component {
           isRequired={false}
           halfWidth={true}
         />
-        <h3>Hear My Name</h3>
-        <div className="sub-head-helper">
-          Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new" target="_blank">this link</a>.
-        Once complete, copy the link to the recording and paste it in the field below.</div>
-        <InputStep
-          fieldName={"hearMyNameLink"}
-          fieldLabel={"Paste \"Hear My Name\" link"}
-          // fieldDefaultVals={this.props.globalState.hearMyNameLink}
-          handleFieldChange={this.props.handleFieldChange}
-          isRequired={false}
-        />
         <h3>Alumni, Parent, and Grandparent Designations</h3>
         <div className="checkboxes">
           <div className="form-step">
@@ -164,18 +153,6 @@ export default class Form extends Component {
             {this.props.isParentAlum && ParentField}
           </div>
         </div>
-        <h3>Job</h3>
-        <DoubleInputStep
-          fieldName={["title", "department"]}
-          fieldLabel={["Job Title", "ARD Department"]}
-          handleFieldChange={this.props.handleFieldChange}
-          fieldDefaultVals={[
-            this.props.globalState.title,
-            this.props.globalState.department,
-          ]}
-          autoComplete={true}
-          isRequired={[true, true]}
-        />
         <h3>Pronouns</h3>
         <div className="sub-head-helper">
           Optional (e.g., she/her/hers, he/him/his, they/their/theirs, etc.)
@@ -188,13 +165,36 @@ export default class Form extends Component {
           isRequired={false}
           halfWidth={true}
         />
+        <h3>Hear My Name</h3>
+        <div className="sub-head-helper">
+          Optional: Record your name so that people can learn how to pronounce it. You can record your name via <a href="https://www.name-coach.com/events/name-profile/registrations/new" target="_blank">this link</a>.
+        Once complete, copy the link to the recording and paste it in the field below.</div>
+        <InputStep
+          fieldName={"hearMyNameLink"}
+          fieldLabel={"Paste \"Hear My Name\" link"}
+          // fieldDefaultVals={this.props.globalState.hearMyNameLink}
+          handleFieldChange={this.props.handleFieldChange}
+          isRequired={false}
+        />
+        <h3>Job</h3>
+        <DoubleInputStep
+          fieldName={["title", "department"]}
+          fieldLabel={["Job Title", "ARD Department"]}
+          handleFieldChange={this.props.handleFieldChange}
+          fieldDefaultVals={[
+            this.props.globalState.title,
+            this.props.globalState.department,
+          ]}
+          autoComplete={true}
+          isRequired={[true, true]}
+        />
         <h3>Address</h3>
         <AddressOptions
           handleFieldChange={this.props.handleFieldChange}
           fieldDefaultVals={this.props.globalState.address}
           isRequired={true}
         />
-        <h3>Contact Information</h3>
+        <h3>Phone Numbers</h3>
         <div className="sub-head-helper">Cell phone number is optional.</div>
         <DoubleInputStep
           fieldName={["officePhoneNum", "cellPhoneNum"]}
