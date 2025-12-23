@@ -218,38 +218,15 @@ export default class Output extends Component {
 
     var combinedRow = "";
     if(pronounsStr.length > 3 & this.props.globalState.hearMyNameLink.length > 5){
-      combinedRow = <td
-                  style={{
-                    fontFamily: '"Arial"',
-                    fontSize: "14px",
-                    color: "#716C6B",
-                    
-                    lineHeight: "1.37",
-                    width: "max-content",
-                  }}
-                  >{Pronouns} | <a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td>
+      combinedRow = <span
+                  >{Pronouns} | <a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></span>
     }
      else if(pronounsStr.length > 3 & this.props.globalState.hearMyNameLink.length < 5){
-      combinedRow = <td
-                  style={{
-                    fontFamily: '"Arial"',
-                    fontSize: "14px",
-                    color: "#716C6B",
-                    lineHeight: "1.37",
-                    width: "max-content",
-                  }}
-                  >{Pronouns}</td>
+      combinedRow = <span
+                  >{Pronouns}</span>
      }
      else if (pronounsStr.length < 4 & this.props.globalState.hearMyNameLink.length > 5){
-      combinedRow = <td
-                  style={{
-                    fontFamily: '"Arial"',
-                    fontSize: "14px",
-                    color: "#716C6B",
-                    lineHeight: "1.37",
-                    width: "max-content",
-                  }}
-                  ><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td>;
+      combinedRow = <span><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></span>;
     }
     else {
       combinedRow = "";
