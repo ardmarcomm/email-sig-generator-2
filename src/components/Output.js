@@ -216,6 +216,45 @@ export default class Output extends Component {
       }
     }
 
+    var combinedRow = "";
+    if(pronounsStr.length > 3 & this.props.globalState.hearMyNameLink.length > 5){
+      combinedRow = <td
+                  style={{
+                    fontFamily: '"Arial"',
+                    fontSize: "14px",
+                    color: "#716C6B",
+                    
+                    lineHeight: "1.37",
+                    width: "max-content",
+                  }}
+                  >{Pronouns} | <a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td>
+    }
+     else if(pronounsStr.length > 3 & this.props.globalState.hearMyNameLink.length < 5){
+      combinedRow = <td
+                  style={{
+                    fontFamily: '"Arial"',
+                    fontSize: "14px",
+                    color: "#716C6B",
+                    lineHeight: "1.37",
+                    width: "max-content",
+                  }}
+                  >{Pronouns}</td>
+     }
+     else if (pronounsStr.length < 4 & this.props.globalState.hearMyNameLink.length > 5){
+      combinedRow = <td
+                  style={{
+                    fontFamily: '"Arial"',
+                    fontSize: "14px",
+                    color: "#716C6B",
+                    lineHeight: "1.37",
+                    width: "max-content",
+                  }}
+                  ><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td>;
+    }
+    else {
+      combinedRow = "";
+    }
+
     return (
       <section className="sig-result">
         <div className="sig-result__wrapper">
@@ -275,8 +314,10 @@ export default class Output extends Component {
                     width: "max-content",
                   }}
                   >
-                  {this.props.globalState.pronouns.length > 0 && Pronouns}
-                  {this.props.globalState.hearMyNameLink.length > 0 && (<tr><td><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td></tr>)}
+                  {/* {this.props.globalState.pronouns.length > 0 && Pronouns}
+                  {this.props.globalState.hearMyNameLink.length > 0 && (<tr><td><a style={{color:"#4e2a84"}} href={this.props.globalState.hearMyNameLink}>Hear my name</a></td></tr>)} */}
+                  {combinedRow}
+                  
                   {this.props.globalState.title.length > 0 && Job}
                   <div>
                     <span className="org">{this.props.globalState.org}</span>

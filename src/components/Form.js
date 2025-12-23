@@ -127,6 +127,9 @@ export default class Form extends Component {
           halfWidth={true}
         />
         <h3>Alumni, Parent, and Grandparent Designations</h3>
+        <div className="sub-head-helper">
+          Optional: Check all boxes that may apply to you.
+        </div>
         <div className="checkboxes">
           <div className="form-step">
             <CheckboxStep
